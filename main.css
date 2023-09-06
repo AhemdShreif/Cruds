@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: #0b061d;
+    color: #fff;
+    font-family: tahoma;
+    
+}
+.crud{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+
+}
+.head{
+    margin: 25px;
+}
+input,
+button{
+    background-color: #160c39;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+    margin-bottom: 6px;
+    color: #fff;
+    transition: .5s;
+    height: 30px;
+}
+input:focus{
+    background-color: #560ff3;
+    transform: scale(1.1);
+}
+
+input.price,
+input.taxes,
+input.ads,
+input.discount,
+small{
+    width: 20%;
+}
+small{
+    background-color: red;
+    padding: 4px;
+    border-radius: 4px;
+}
+small::before{
+    content: 'Total: ';
+}
+button{
+    width: 100%;
+    background-color: #27096f;
+
+    transition: .5s;
+    cursor: pointer;
+    border-radius: 20px;
+}
+button:hover{
+    letter-spacing: 1px;
+    background-color: #560ff3;
+}
+table{
+    width: 100%;
+    margin: 10px 0;
+}
+th{
+    text-transform: uppercase;
+}
+th,
+td{
+    padding: 5px;
+}
+/* table > tr{
+    background-color: #27096f;
+} */
+/* table tbody tr{
+    background-color: #27096f;
+
+} */
+.btnsearch{
+    display: flex;
+    justify-content: space-between;
+}
+.btnsearch button{
+    width: 45%;
+}
